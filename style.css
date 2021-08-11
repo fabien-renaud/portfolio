@@ -10,7 +10,10 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing:border-box;
     height: 100vh;
+    width: 100vw;
+    padding: 0 2em;
 }
 
 h1 {
@@ -19,4 +22,8 @@ h1 {
 
 a {
     color: #efbb3f;
+}
+
+img {
+    max-width: 100%;
 }

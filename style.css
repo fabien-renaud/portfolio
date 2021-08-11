@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    font-family: "Poppins Light", serif;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Poppins SemiBold", serif;
+}
+
+a {
+    color: #efbb3f;
+}

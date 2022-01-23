@@ -1,0 +1,147 @@
+@import 'style/color';
+@import 'style/bullets-points';
+@import 'style/icon';
+
+body {
+    margin: 0;
+    font-family: 'Raleway', serif;
+    font-weight: 400;
+}
+
+section {
+    // Colors
+    background-color: $background-light;
+    color: $text-dark;
+
+    // Positioning
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Sizing
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+
+    * {
+        max-width: 40em;
+    }
+
+    //&:nth-child(2) {
+    //    background-color: $background-dark;
+    //    color: $text-light;
+    //}
+}
+
+button {
+    // Colors
+    background-color: $gradient-5;
+    color: $text-light;
+
+    // Border
+    border: $gradient-5 2px solid;
+    border-radius: 50em;
+
+    // Sizing
+    height: 2.5em;
+    margin: 0;
+    padding: 0 2em;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $background-light;
+        color: $gradient-5;
+        transition: all 0.15s ease-in-out;
+    }
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    color: inherit;
+    outline: none;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+// Titles
+hgroup {
+    color: $gradient-5;
+    font-weight: 900;
+
+    h1 {
+        font-size: 3em;
+
+        &:before {
+            content: '이름\a';
+            white-space: pre;
+            font-size: 0.6em;
+        }
+    }
+
+    h2 {
+        color: $text-dark;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+        font-size: 2em;
+        font-weight: 900;
+        color: $text-light-transparent;
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: -50%;
+        left: -50%;
+    }
+}
+
+#about {
+    h2::after {
+        content: '정보';
+    }
+}
+
+#contact {
+    h2::after {
+        content: '연락';
+    }
+}
+
+#resume {
+    h2::after {
+        content: '경력';
+    }
+}
+
+nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer {
+    background-color: $gradient-1;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $text-light;
+}

@@ -6,27 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <meta name="theme-color" content="#000000"/>
     <meta name="description" content="Fabien RENAUD's portfolio"/>
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json"/>
     <title>Fabien RENAUD</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2GE2BJ3RP"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-D2GE2BJ3RP');
     </script>
 </head>
 <body>
-<main>
-    <h1>Bonjour !</h1>
-    <p>Ce site est en cours de construction. En attendant, n'hésitez pas à envoyer un mail à <a href="mailto:contact@fabienrenaud.fr">contact@fabienrenaud.fr</a></p>
-    <img src="building.gif" alt="building" />
-</main>
+<main id="root"></main>
+<script type="module" src="/src/main.jsx"></script>
 </body>
 </html>

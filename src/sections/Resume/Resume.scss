@@ -1,0 +1,9 @@
+@import '../../App';
+
+#resume h2 {
+    color: $gradient-4;
+
+    &::before {
+        content: '경력';
+    }
+}

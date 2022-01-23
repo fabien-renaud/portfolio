@@ -1,0 +1,48 @@
+@import '../../App';
+
+#home .container {
+    align-items: start;
+
+    hgroup {
+        color: $gradient-5;
+        font-weight: 900;
+
+        h1 {
+            font-size: 3em;
+
+            &:before {
+                content: '이름\a';
+                white-space: pre;
+                font-size: 0.6em;
+            }
+        }
+
+        h2 {
+            color: $text-dark;
+            font-weight: 400;
+            text-transform: capitalize;
+            margin-bottom: 1em;
+        }
+    }
+
+    .call-to-action {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2em;
+        width: 100%;
+
+        .icons {
+            margin-top: 1em;
+
+            svg {
+                width: 1.5em;
+                height: auto;
+
+                &:not(:nth-child(1)) {
+                    margin-left: 0.5em;
+                }
+            }
+        }
+    }
+}

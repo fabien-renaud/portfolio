@@ -1,0 +1,16 @@
+nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+
+    ul li {
+        mix-blend-mode: difference;
+
+        span {
+            display: block;
+        }
+
+        &.selected {
+        }
+    }
+}

@@ -1,27 +1,36 @@
+import './NavBar.scss';
+
+const sections = [
+    {
+        title: 'Home',
+        subTitle: '홈 페이지 // Accueil'
+    },
+    {
+        title: 'About',
+        subTitle: '대해서 // A propos'
+    },
+    {
+        title: 'Resume',
+        subTitle: '경력 // Expériences'
+    },
+    {
+        title: 'Contact',
+        subTitle: '연락 // Contact'
+    }
+];
+
 export const NavBar = () => {
     return (
         <nav>
             <ul>
-                <li>
-                    <span>홈 페이지 // Accueil</span>
-                    Home
-                </li>
-                <li>
-                    <span>대해서 // A propos</span>
-                    About
-                </li>
-                <li>
-                    <span>경력 // Expériences</span>
-                    Resume
-                </li>
-                <li>
-                    <span>기술 // Compétences</span>
-                    Services
-                </li>
-                <li>
-                    <span>연락 // Contact</span>
-                    Contact
-                </li>
+                {sections.map((section) => (
+                    <li className="selected">
+                        <a href={`#${section.title.toLowerCase()}`}>
+                            <span>{section.subTitle}</span>
+                            {section.title}
+                        </a>
+                    </li>
+                ))}
             </ul>
         </nav>
     );

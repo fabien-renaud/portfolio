@@ -1,4 +1,6 @@
-import {Experience} from './Experience/Experience';
+import {Section, SectionTitle} from '../../components';
+import {Experience} from './Experience';
+import './Resume.scss';
 
 const experiences = [
     {
@@ -28,13 +30,13 @@ const experiences = [
 
 export const Resume = () => {
     return (
-        <section id="resume">
-            <h2>Resume</h2>
+        <Section id="resume">
+            <SectionTitle>Resume</SectionTitle>
             <ul>
                 {experiences.map((experience) => (
                     <Experience {...experience} />
                 ))}
             </ul>
-        </section>
+        </Section>
     );
 };

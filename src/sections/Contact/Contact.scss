@@ -1,0 +1,36 @@
+@import '../../App';
+
+#contact {
+    form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        div {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            label {
+                width: 45%;
+            }
+        }
+
+        label {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+
+            span {
+            }
+        }
+    }
+
+    h2 {
+        color: $gradient-3;
+
+        &::before {
+            content: '연락';
+        }
+    }
+}

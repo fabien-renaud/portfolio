@@ -1,0 +1,29 @@
+@import '../../App';
+
+section {
+    // Colors
+    background-color: $background-light;
+    color: $text-dark;
+
+    // Positioning
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    // Sizing
+    box-sizing: border-box;
+    height: 100vh;
+    width: 100vw;
+
+    .container {
+        // Positioning
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        width: 750px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,23 @@
+@import '../../App';
+
+button {
+    // Colors
+    background-color: $gradient-5;
+    color: $text-light;
+
+    // Border
+    border: $gradient-5 2px solid;
+    border-radius: 50em;
+
+    // Sizing
+    height: 2.5em;
+    margin: 0;
+    padding: 0 2em;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $background-light;
+        color: $gradient-5;
+        transition: all 0.2s ease-in-out;
+    }
+}

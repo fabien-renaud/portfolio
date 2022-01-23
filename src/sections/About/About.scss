@@ -1,0 +1,11 @@
+@import '../../App';
+
+#about {
+    background-color: $background-dark;
+    color: $text-light;
+
+    h2::before {
+        color: $text-light-transparent;
+        content: '정보';
+    }
+}

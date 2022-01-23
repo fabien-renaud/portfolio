@@ -1,0 +1,23 @@
+@import '../../App';
+
+section h2 {
+    font-size: 2em;
+    font-weight: 400;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 3em;
+
+    &::before {
+        font-size: 2em;
+        font-weight: 900;
+        color: $text-dark-transparent;
+        height: 200%;
+        width: 200%;
+        position: absolute;
+        display: block;
+        text-align: center;
+        top: -50%;
+        left: -50%;
+        z-index: -1;
+    }
+}

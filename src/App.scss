@@ -1,59 +1,23 @@
-@import 'style/color';
-@import 'style/bullets-points';
-@import 'style/icon';
+$gradient-1: #2f4858;
+$gradient-2: #4c577e;
+$gradient-3: #875d92;
+$gradient-4: #c55d89;
+$gradient-5: #ed6d67;
+$gradient-6: #f39336;
+
+$background-light: #fff;
+$background-dark: #333;
+
+$text-light: #fff;
+$text-light-transparent: rgba(255, 255, 255, 0.15);
+$text-dark: #333;
+$text-dark-transparent: rgba(0, 0, 0, 0.15);
 
 body {
     margin: 0;
     font-family: 'Raleway', serif;
+    font-variant-numeric: lining-nums;
     font-weight: 400;
-}
-
-section {
-    // Colors
-    background-color: $background-light;
-    color: $text-dark;
-
-    // Positioning
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    // Sizing
-    box-sizing: border-box;
-    height: 100vh;
-    width: 100vw;
-
-    * {
-        max-width: 40em;
-    }
-
-    //&:nth-child(2) {
-    //    background-color: $background-dark;
-    //    color: $text-light;
-    //}
-}
-
-button {
-    // Colors
-    background-color: $gradient-5;
-    color: $text-light;
-
-    // Border
-    border: $gradient-5 2px solid;
-    border-radius: 50em;
-
-    // Sizing
-    height: 2.5em;
-    margin: 0;
-    padding: 0 2em;
-
-    &:hover {
-        cursor: pointer;
-        background-color: $background-light;
-        color: $gradient-5;
-        transition: all 0.15s ease-in-out;
-    }
 }
 
 ul {
@@ -72,76 +36,109 @@ h2 {
     letter-spacing: 0.05em;
 }
 
-// Titles
-hgroup {
-    color: $gradient-5;
-    font-weight: 900;
-
-    h1 {
-        font-size: 3em;
-
-        &:before {
-            content: '이름\a';
-            white-space: pre;
-            font-size: 0.6em;
-        }
+.color {
+    &-1 {
+        color: $gradient-1;
     }
 
-    h2 {
-        color: $text-dark;
-        font-weight: 400;
-        text-transform: capitalize;
+    &-2 {
+        color: $gradient-2;
+    }
+
+    &-3 {
+        color: $gradient-3;
+    }
+
+    &-4 {
+        color: $gradient-4;
+    }
+
+    &-5 {
+        color: $gradient-5;
+    }
+
+    &-6 {
+        color: $gradient-6;
     }
 }
+.background-color {
+    &-1 {
+        background-color: $gradient-1;
+    }
 
-h2 {
-    font-size: 2em;
-    font-weight: 400;
-    position: relative;
+    &-2 {
+        background-color: $gradient-2;
+    }
 
-    &::after {
-        font-size: 2em;
-        font-weight: 900;
-        color: $text-light-transparent;
-        width: 200%;
-        height: 200%;
-        position: absolute;
-        display: block;
-        text-align: center;
-        top: -50%;
-        left: -50%;
+    &-3 {
+        background-color: $gradient-3;
+    }
+
+    &-4 {
+        background-color: $gradient-4;
+    }
+
+    &-5 {
+        background-color: $gradient-5;
+    }
+
+    &-6 {
+        background-color: $gradient-6;
     }
 }
+.border-color {
+    &-1 {
+        border-color: $gradient-1;
+    }
 
-#about {
-    h2::after {
-        content: '정보';
+    &-2 {
+        border-color: $gradient-2;
+    }
+
+    &-3 {
+        border-color: $gradient-3;
+    }
+
+    &-4 {
+        border-color: $gradient-4;
+    }
+
+    &-5 {
+        border-color: $gradient-5;
+    }
+
+    &-6 {
+        border-color: $gradient-6;
     }
 }
-
-#contact {
-    h2::after {
-        content: '연락';
+.icon-color {
+    &-1 {
+        fill: $gradient-1;
+        stroke: $gradient-1;
     }
-}
 
-#resume {
-    h2::after {
-        content: '경력';
+    &-2 {
+        fill: $gradient-2;
+        stroke: $gradient-2;
     }
-}
 
-nav {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-}
+    &-3 {
+        fill: $gradient-3;
+        stroke: $gradient-3;
+    }
 
-footer {
-    background-color: $gradient-1;
-    height: 10em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $text-light;
+    &-4 {
+        fill: $gradient-4;
+        stroke: $gradient-4;
+    }
+
+    &-5 {
+        fill: $gradient-5;
+        stroke: $gradient-5;
+    }
+
+    &-6 {
+        fill: $gradient-6;
+        stroke: $gradient-6;
+    }
 }

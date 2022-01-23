@@ -1,29 +1,32 @@
-import {EmailIcon, FileIcon, GithubIcon, LinkedInIcon, PhoneIcon} from '../../components';
+import {useColor} from '../../hooks/useColor';
+import {Button, EmailIcon, FileIcon, GithubIcon, LinkedInIcon, PhoneIcon, Section} from '../../components';
+import './Home.scss';
+import {ColorPicker} from './ColorPicker';
 
 export const Home = () => {
+    const {styleColor} = useColor();
+    const {backgroundColor, borderColor, iconColor, textColor} = styleColor(5);
+
     return (
-        <section id="home">
+        <Section id="home">
             <hgroup>
-                <h1>Fabien RENAUD</h1>
+                <h1 className={textColor}>Fabien RENAUD</h1>
                 <h2>Software Engineer</h2>
             </hgroup>
-            <ul className="bullets-points">
-                <li />
-                <li />
-                <li />
-                <li />
-                <li />
-                <li />
-            </ul>
-            <p>Don't be shy</p>
-            <button type="button">Contact me</button>
-            <div className="icons">
-                <PhoneIcon />
-                <EmailIcon />
-                <LinkedInIcon />
-                <GithubIcon />
-                <FileIcon />
+            <ColorPicker />
+            <div className="call-to-action">
+                <p>Don't be shy</p>
+                <Button type="button" className={`${backgroundColor} ${borderColor}`}>
+                    Contact me
+                </Button>
+                <div className={`icons ${iconColor}`}>
+                    <PhoneIcon />
+                    <EmailIcon />
+                    <LinkedInIcon />
+                    <GithubIcon />
+                    <FileIcon />
+                </div>
             </div>
-        </section>
+        </Section>
     );
 };

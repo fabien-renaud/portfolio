@@ -24,7 +24,7 @@ export const NavBar = () => {
         <nav>
             <ul>
                 {sections.map((section) => (
-                    <li className="selected">
+                    <li key={section.title} className="selected">
                         <a href={`#${section.title.toLowerCase()}`}>
                             <span>{section.subTitle}</span>
                             {section.title}

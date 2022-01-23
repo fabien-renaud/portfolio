@@ -34,7 +34,7 @@ export const Resume = () => {
             <SectionTitle>Resume</SectionTitle>
             <ul>
                 {experiences.map((experience) => (
-                    <Experience {...experience} />
+                    <Experience key={experience.title} {...experience} />
                 ))}
             </ul>
         </Section>

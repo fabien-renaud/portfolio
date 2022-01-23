@@ -19,12 +19,22 @@ export const Home = () => {
                 <Button type="button" className={`${backgroundColor} ${borderColor}`}>
                     Contact me
                 </Button>
-                <div className={`icons ${iconColor}`}>
-                    <PhoneIcon />
-                    <EmailIcon />
-                    <LinkedInIcon />
-                    <GithubIcon />
-                    <FileIcon />
+                <div className="icons">
+                    <a href="tel:+33687240753" className={iconColor}>
+                        <PhoneIcon />
+                    </a>
+                    <a href="mailto:contact@fabienrenaud.fr" className={iconColor}>
+                        <EmailIcon />
+                    </a>
+                    <a href="https://www.linkedin.com/in/fabien-renaud" className={iconColor}>
+                        <LinkedInIcon />
+                    </a>
+                    <a href="https://github.com/fabien-renaud" className={iconColor}>
+                        <GithubIcon />
+                    </a>
+                    <a href="../../../public/files/CV%20Fabien%20RENAUD.pdf" download className={iconColor}>
+                        <FileIcon />
+                    </a>
                 </div>
             </div>
         </Section>

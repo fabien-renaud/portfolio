@@ -35,9 +35,11 @@
         .icons {
             margin-top: 1em;
 
-            svg {
-                width: 1.5em;
-                height: auto;
+            a {
+                svg {
+                    width: 1.5em;
+                    height: auto;
+                }
 
                 &:not(:nth-child(1)) {
                     margin-left: 0.5em;

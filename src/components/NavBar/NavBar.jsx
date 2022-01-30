@@ -1,33 +1,40 @@
+import {useScroll} from '../../hooks/useScroll';
 import './NavBar.scss';
 
 const sections = [
     {
         title: 'Home',
-        subTitle: '홈 페이지 // Accueil'
+        position: 0
     },
     {
         title: 'About',
-        subTitle: '대해서 // A propos'
+        position: 1
     },
     {
         title: 'Resume',
-        subTitle: '경력 // Expériences'
+        position: 2
     },
     {
         title: 'Contact',
-        subTitle: '연락 // Contact'
+        position: 3
     }
 ];
 
 export const NavBar = () => {
+    const {scrollY} = useScroll();
+    const scrollMin = (position) => position * 100 - 10;
+    const scrollMax = (position) => position * 100 + 90;
+    const isActive = (position) => scrollY >= scrollMin(position) && scrollY < scrollMax(position);
+
     return (
         <nav>
             <ul>
                 {sections.map((section) => (
-                    <li key={section.title} className="selected">
+                    <li
+                        key={section.title}
+                        className={`${isActive(section.position) ? 'active ' : ''}${section.title.toLowerCase()}`}>
                         <a href={`#${section.title.toLowerCase()}`}>
-                            <span>{section.subTitle}</span>
-                            {section.title}
+                            <span>{section.title}</span>
                         </a>
                     </li>
                 ))}

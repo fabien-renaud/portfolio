@@ -1,7 +1,7 @@
 @import '../../App';
 
 #about {
-    background-color: $background-dark;
+    background: linear-gradient(77.78deg, $gradient-1 10.59%, $gradient-2 90.44%);
     color: $text-light;
 
     h2::before {

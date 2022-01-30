@@ -1,16 +1,71 @@
+@import '../../App';
+
 nav {
     position: fixed;
     top: 50%;
+    left: 5em;
     transform: translateY(-50%);
 
     ul li {
-        mix-blend-mode: difference;
+        padding-left: 1em;
+        margin-bottom: 1.2em;
+        border-left: rgba(0, 0, 0, 0) 3px solid;
 
-        span {
-            display: block;
+        a {
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            color: $text-dark;
+
+            span {
+                mix-blend-mode: difference;
+            }
         }
 
-        &.selected {
+        &.active {
+            a {
+                font-size: 2em;
+                font-weight: 600;
+
+                &:before {
+                    display: block;
+                    font-size: 0.4em;
+                    font-weight: 400;
+                    letter-spacing: 0.1em;
+                    text-transform: capitalize;
+                }
+            }
+
+            &.home {
+                border-left: $gradient-6 3px solid;
+                a:before {
+                    color: $gradient-6;
+                    content: '홈 페이지 // Accueil';
+                }
+            }
+
+            &.about {
+                border-left: $gradient-5 3px solid;
+                a:before {
+                    color: $gradient-5;
+                    content: '대해서 // A propos';
+                }
+            }
+
+            &.resume {
+                border-left: $gradient-4 3px solid;
+                a:before {
+                    color: $gradient-4;
+                    content: '경력 // Expériences';
+                }
+            }
+
+            &.contact {
+                border-left: $gradient-3 3px solid;
+                a:before {
+                    color: $gradient-3;
+                    content: '연락 // Contact';
+                }
+            }
         }
     }
 }

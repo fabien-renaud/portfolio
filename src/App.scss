@@ -6,7 +6,7 @@ $gradient-5: #ed6d67;
 $gradient-6: #f39336;
 
 $background-light: #fff;
-$background-dark: #333;
+$background-dark: gradient;
 
 $text-light: #fff;
 $text-light-transparent: rgba(255, 255, 255, 0.15);
@@ -27,13 +27,17 @@ ul {
 
 a {
     color: inherit;
-    outline: none;
+    text-decoration: none;
 }
 
 h1,
 h2 {
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+strong {
+    font-weight: 600;
 }
 
 .color {

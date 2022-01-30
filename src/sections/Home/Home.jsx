@@ -1,5 +1,5 @@
 import {useColor} from '../../hooks/useColor';
-import {Button, EmailIcon, FileIcon, GithubIcon, LinkedInIcon, PhoneIcon, Section} from '../../components';
+import {Avatar, Button, EmailIcon, FileIcon, GithubIcon, LinkedInIcon, PhoneIcon, Section} from '../../components';
 import './Home.scss';
 import {ColorPicker} from './ColorPicker';
 
@@ -9,11 +9,16 @@ export const Home = () => {
 
     return (
         <Section id="home">
-            <hgroup>
-                <h1 className={textColor}>Fabien RENAUD</h1>
-                <h2>Software Engineer</h2>
-            </hgroup>
-            <ColorPicker />
+            <div className="heading">
+                <Avatar />
+                <div className="heading-info">
+                    <hgroup>
+                        <h1 className={textColor}>Fabien RENAUD</h1>
+                        <h2>Software Engineer</h2>
+                    </hgroup>
+                    <ColorPicker />
+                </div>
+            </div>
             <div className="call-to-action">
                 <p>Don't be shy</p>
                 <Button type="button" className={`${backgroundColor} ${borderColor}`}>

@@ -3,25 +3,38 @@
 #home .container {
     align-items: start;
 
-    hgroup {
-        color: $gradient-5;
-        font-weight: 900;
+    .heading {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
 
-        h1 {
-            font-size: 3em;
-
-            &:before {
-                content: '이름\a';
-                white-space: pre;
-                font-size: 0.6em;
-            }
+        .heading-info {
+            display: flex;
+            flex-direction: column;
         }
 
-        h2 {
-            color: $text-dark;
-            font-weight: 400;
-            text-transform: capitalize;
-            margin-bottom: 1em;
+        hgroup {
+            color: $gradient-5;
+            font-weight: 900;
+            margin: 0;
+
+            h1 {
+                font-size: 3em;
+                margin: 0;
+
+                &:before {
+                    content: '이름\a';
+                    white-space: pre;
+                    font-size: 0.6em;
+                }
+            }
+
+            h2 {
+                color: $text-dark;
+                font-weight: 400;
+                text-transform: capitalize;
+                margin: 0;
+            }
         }
     }
 

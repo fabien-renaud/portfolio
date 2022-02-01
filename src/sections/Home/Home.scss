@@ -1,4 +1,4 @@
-@import '../../App';
+@import "../../App";
 
 #home .container {
     align-items: start;
@@ -14,26 +14,26 @@
         }
 
         hgroup {
-            color: $gradient-5;
-            font-weight: 900;
             margin: 0;
+            font-weight: 900;
+            color: $gradient-5;
 
             h1 {
-                font-size: 3em;
                 margin: 0;
+                font-size: 3em;
 
-                &:before {
-                    content: '이름\a';
-                    white-space: pre;
+                &::before {
                     font-size: 0.6em;
+                    white-space: pre;
+                    content: "이름\a";
                 }
             }
 
             h2 {
-                color: $text-dark;
-                font-weight: 400;
-                text-transform: capitalize;
                 margin: 0;
+                font-weight: 400;
+                color: $text-dark;
+                text-transform: capitalize;
             }
         }
     }
@@ -42,8 +42,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 2em;
         width: 100%;
+        margin-top: 2em;
 
         .icons {
             margin-top: 1em;

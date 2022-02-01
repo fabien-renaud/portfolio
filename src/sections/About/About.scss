@@ -1,11 +1,11 @@
-@import '../../App';
+@import "../../App";
 
 #about {
-    background: linear-gradient(77.78deg, $gradient-1 10.59%, $gradient-2 90.44%);
     color: $text-light;
+    background: linear-gradient(77.78deg, $gradient-1 10.59%, $gradient-2 90.44%);
 
     h2::before {
         color: $text-light-transparent;
-        content: '정보';
+        content: "정보";
     }
 }

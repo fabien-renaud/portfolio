@@ -1,10 +1,15 @@
-@import '../../App';
+@import "../../App";
 
 #contact {
     form {
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        label {
+            display: flex;
+            flex-flow: column nowrap;
+        }
 
         div {
             display: flex;
@@ -15,22 +20,13 @@
                 width: 45%;
             }
         }
-
-        label {
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
-
-            span {
-            }
-        }
     }
 
     h2 {
         color: $gradient-3;
 
         &::before {
-            content: '연락';
+            content: "연락";
         }
     }
 }

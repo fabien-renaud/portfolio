@@ -1,4 +1,4 @@
-@import '../../App';
+@import "../../App";
 
 nav {
     position: fixed;
@@ -9,12 +9,12 @@ nav {
     ul li {
         padding-left: 1em;
         margin-bottom: 1.2em;
-        border-left: rgba(0, 0, 0, 0) 3px solid;
+        border-left: rgb(0 0 0 / 0%) 3px solid;
 
         a {
-            text-transform: uppercase;
-            letter-spacing: 0.3em;
             color: $text-dark;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
 
             span {
                 mix-blend-mode: difference;
@@ -26,44 +26,48 @@ nav {
                 font-size: 2em;
                 font-weight: 600;
 
-                &:before {
+                &::before {
                     display: block;
                     font-size: 0.4em;
                     font-weight: 400;
-                    letter-spacing: 0.1em;
                     text-transform: capitalize;
+                    letter-spacing: 0.1em;
                 }
             }
 
             &.home {
                 border-left: $gradient-6 3px solid;
-                a:before {
+
+                a::before {
                     color: $gradient-6;
-                    content: '홈 페이지 // Accueil';
+                    content: "홈 페이지 // Accueil";
                 }
             }
 
             &.about {
                 border-left: $gradient-5 3px solid;
-                a:before {
+
+                a::before {
                     color: $gradient-5;
-                    content: '대해서 // A propos';
+                    content: "대해서 // A propos";
                 }
             }
 
             &.resume {
                 border-left: $gradient-4 3px solid;
-                a:before {
+
+                a::before {
                     color: $gradient-4;
-                    content: '경력 // Expériences';
+                    content: "경력 // Expériences";
                 }
             }
 
             &.contact {
                 border-left: $gradient-3 3px solid;
-                a:before {
+
+                a::before {
                     color: $gradient-3;
-                    content: '연락 // Contact';
+                    content: "연락 // Contact";
                 }
             }
         }

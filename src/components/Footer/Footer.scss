@@ -1,10 +1,10 @@
-@import '../../App';
+@import "../../App";
 
 footer {
-    background-color: $gradient-1;
-    height: 10em;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 10em;
     color: $text-light;
+    background-color: $gradient-1;
 }

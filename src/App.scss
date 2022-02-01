@@ -9,20 +9,20 @@ $background-light: #fff;
 $background-dark: gradient;
 
 $text-light: #fff;
-$text-light-transparent: rgba(255, 255, 255, 0.15);
+$text-light-transparent: rgb(255 255 255 / 15%);
 $text-dark: #333;
-$text-dark-transparent: rgba(0, 0, 0, 0.15);
+$text-dark-transparent: rgb(0 0 0 / 15%);
 
 body {
     margin: 0;
-    font-family: 'Raleway', serif;
-    font-variant-numeric: lining-nums;
+    font-family: Raleway, serif;
     font-weight: 400;
+    font-variant-numeric: lining-nums;
 }
 
 ul {
-    list-style: none;
     padding-left: 0;
+    list-style: none;
 }
 
 a {
@@ -65,6 +65,7 @@ strong {
         color: $gradient-6;
     }
 }
+
 .background-color {
     &-1 {
         background-color: $gradient-1;
@@ -90,6 +91,7 @@ strong {
         background-color: $gradient-6;
     }
 }
+
 .border-color {
     &-1 {
         border-color: $gradient-1;
@@ -115,6 +117,7 @@ strong {
         border-color: $gradient-6;
     }
 }
+
 .icon-color {
     &-1 {
         fill: $gradient-1;
